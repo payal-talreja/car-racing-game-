@@ -10,6 +10,17 @@ var form, player, game;
 
 var cars, car1, car2, car3, car4;
 
+var car1Image, car2Image, car3Image, car4Image;
+var groundImage, trackImage;
+
+function preload(){
+  car1Image = loadImage("images/car1.png");
+  car2Image = loadImage("images/car2.png");
+  car3Image = loadImage("images/car3.png");
+  car3Image = loadImage("images/car4.png");
+  trackImage = loadImage("images/track.jpg");
+  groundImage = loadImage("images/ground.png");
+}  
 
 function setup(){
   canvas = createCanvas(displayWidth - 20, displayHeight-30);
@@ -21,7 +32,7 @@ function setup(){
 
 
 function draw(){
-  if(playerCount === 4){
+  if(playerCount === 2){
     game.update(1);
   }
   if(gameState === 1){
