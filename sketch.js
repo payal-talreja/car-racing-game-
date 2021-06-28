@@ -17,7 +17,7 @@ function preload(){
   car1Image = loadImage("images/car1.png");
   car2Image = loadImage("images/car2.png");
   car3Image = loadImage("images/car3.png");
-  car3Image = loadImage("images/car4.png");
+  car4Image = loadImage("images/car4.png");
   trackImage = loadImage("images/track.jpg");
   groundImage = loadImage("images/ground.png");
 }  
@@ -32,7 +32,7 @@ function setup(){
 
 
 function draw(){
-  if(playerCount === 2){
+  if(playerCount === 4){
     game.update(1);
   }
   if(gameState === 1){
